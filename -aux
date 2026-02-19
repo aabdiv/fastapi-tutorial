@@ -1,0 +1,24 @@
+[0;1;32m●[0m fastapi.service - demo fastapi application
+     Loaded: loaded (]8;;file://DESKTOP-KJ3L203/etc/systemd/system/fastapi.service/etc/systemd/system/fastapi.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Thu 2026-02-19 09:58:25 MSK; 4min 35s ago
+   Main PID: 876 (gunicorn)
+      Tasks: 11 (limit: 4657)
+     Memory: 227.7M (peak: 246.6M)
+        CPU: 6.840s
+     CGroup: /system.slice/fastapi.service
+             ├─[0;38;5;245m876 /home/vvv/app/.venv/bin/python3 /home/vvv/app/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000[0m
+             ├─[0;38;5;245m878 /home/vvv/app/.venv/bin/python3 /home/vvv/app/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000[0m
+             ├─[0;38;5;245m879 /home/vvv/app/.venv/bin/python3 /home/vvv/app/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000[0m
+             ├─[0;38;5;245m880 /home/vvv/app/.venv/bin/python3 /home/vvv/app/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000[0m
+             └─[0;38;5;245m881 /home/vvv/app/.venv/bin/python3 /home/vvv/app/.venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000[0m
+
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[880]: [2026-02-19 09:58:27 +0300] [880] [INFO] Started server process [880]
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[879]: [2026-02-19 09:58:27 +0300] [879] [INFO] Waiting for application startup.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[880]: [2026-02-19 09:58:27 +0300] [880] [INFO] Waiting for application startup.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[879]: [2026-02-19 09:58:27 +0300] [879] [INFO] Application startup complete.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[880]: [2026-02-19 09:58:27 +0300] [880] [INFO] Application startup complete.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[878]: [2026-02-19 09:58:27 +0300] [878] [INFO] Started server process [878]
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[881]: [2026-02-19 09:58:27 +0300] [881] [INFO] Waiting for application startup.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[878]: [2026-02-19 09:58:27 +0300] [878] [INFO] Waiting for application startup.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[878]: [2026-02-19 09:58:27 +0300] [878] [INFO] Application startup complete.
+Feb 19 09:58:27 DESKTOP-KJ3L203 gunicorn[881]: [2026-02-19 09:58:27 +0300] [881] [INFO] Application startup complete.
