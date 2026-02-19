@@ -39,4 +39,5 @@ def vote(current_user: CurrentUserDep, session: SessionDep, vote: schemas.Vote):
         
         else:
             raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="vote already exists")
-
+        
+    
