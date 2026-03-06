@@ -1,7 +1,6 @@
 import jwt
 
 from app import schemas
-from tests.database import client
 from app.config import settings
 
 
@@ -20,7 +19,6 @@ def test_create_user(client):
 
 def test_login_user(client, test_user):
     response = client.post("/login", data={"username": test_user["email"], "password": test_user["password"]})
-    print(response.json())
     login_output = schemas.Token(**response.json())
     
     payload = jwt.decode(login_output.access_token, settings.secret_key, algorithms=[settings.algorithm])

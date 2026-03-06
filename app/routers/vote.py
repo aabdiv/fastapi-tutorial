@@ -18,7 +18,6 @@ def vote(current_user: CurrentUserDep, session: SessionDep, vote: schemas.Vote):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"post {vote.post_id} not found")
 
     vote_in_db = session.get(models.Vote, (current_user.id, vote.post_id))
-    print(f"HERE _______: {vote_in_db}")
 
 
     if vote_in_db is None:
