@@ -8,6 +8,16 @@ on:
 
 jobs:
   job1:
+    env:
+      DATABASE_HOSTNAME: localhost
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: 12347890
+      DATABASE_NAME: fastapi
+      SECRET_KEY: 241b72a87732904f3c22d5e23d218e9ad28056d8312af7175b1cf5b685e08e69
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 30
+
     runs-on: ubuntu-latest
 
     steps:
